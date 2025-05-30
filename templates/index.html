@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/style.css">
+  <script src="static/js/script.js" defer></script>
+  <title>BMI Calculator</title>
+</head>
+<body>
+
+  <div class="bmi-container">
+    <div id="featured-image">
+      <div id="overlay">
+        <div id="top-text">
+          <h2>Body Mass Index (BMI)</h2>
+          <h4>Calculator</h4>
+        </div>
+        
+        <div id="bottom-text">
+          <hr>
+          <h4>About &RightArrow;</h4>
+        </div>
+      </div>
+    </div>
+    <div id="calculator-container">
+      <input type="text" placeholder="Full Name" class="user-name" id="name"  autocomplete="additional-name">
+      <input type="text" placeholder="Weight (Kg)" class="weight-input" id="weight">
+      <input type="text" placeholder="Height (m)" class="height-input" id="height">
+      <div id="display-result" class="result-display">BMI: 0.0</div>
+      <div id="inlines">
+        <h4>Status Color</h4><div id="color" class="status-color"></div><p class="status">Status category</p>
+      </div>
+      <button class="bmi-button" onclick="greet()">Get BMI Result</button>
+      <p id="footer-text">Developed by SMI ICT Solutions &copy; 2025</p>
+    </div>
+  </div>
+</body>
+</html>
